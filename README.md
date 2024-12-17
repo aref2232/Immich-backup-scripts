@@ -1,5 +1,4 @@
-# Immich-backup-scripts
-Scripts to backup/restore immich to rclone remote 
+
 # Immich-backup-scripts
 Scripts to backup/restore immich to rclone remote 
 
@@ -92,3 +91,12 @@ Troubleshooting
 
   Permissions Issues
     If the script cannot write to the log or backup directories, ensure that the user running the script has the necessary permissions to create and modify files in those directories.
+
+
+
+
+immich_sync_script
+
+   The immich_sync_script is a simple script designed to sync backups between two remote storage locations using rclone. For example, if your primary backup is stored on OneDrive, this script can sync it to another remote, such as      Google Drive, giving you an additional layer of redundancy. By running this script on a VPS or any server, you can ensure your data exists in at least three different locations.
+
+   This approach may not be the most robust solution for secondary backups. A better alternative would be running the main backup script directly on two different remotes or using a specialized backup tool like BorgBackup. However,     given the constraints of my limited budget and internet connection, this script provides a practical and effective way to maintain an additional backup without significant cost or complexity.
