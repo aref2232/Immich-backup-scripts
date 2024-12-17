@@ -95,7 +95,7 @@ Troubleshooting
 
 
 
-immich_sync_script
+## immich_sync_script
 
    The immich_sync_script is a simple script designed to sync backups between two remote storage locations using rclone. For example, if your primary backup is stored on OneDrive, this script can sync it to another remote, such as      Google Drive, giving you an additional layer of redundancy. By running this script on a VPS or any server, you can ensure your data exists in at least three different locations.
 
